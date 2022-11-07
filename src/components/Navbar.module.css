@@ -2,7 +2,7 @@
 	--main-color: rgb(67, 67, 67);
 	--accent-color: #e3e3e3e3;
 
-	--logo-padding: calc(1em + 1px) 2em;
+	--logo-padding: calc(1em + 1px) 1em;
 	--logo-padding-hover: calc(1em + 1px) 6em calc(1em + 1px) 3em;
 
 	--logo-padding-media: 0.9em 1.5em;
@@ -48,6 +48,7 @@
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 20px;
+	text-decoration: none;
 	transform: skew(20deg);
 }
 
@@ -113,11 +114,13 @@
 	.navbar__navList__link,
 	.navbar__navList__link:hover {
 		padding: var(--link-padding-media);
+		text-decoration: none;
 	}
 	.navbar__navList__link:last-child,
 	.navbar__navList__link:last-child:hover {
 		padding: var(--link-last-padding-media);
 		margin-right: var(--link-last-margin-media);
+		text-decoration: none;
 	}
 
 	.navbar__navList__link,
