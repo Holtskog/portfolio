@@ -1,6 +1,12 @@
 :root {
 	--main-color: rgb(67, 67, 67);
 	--accent-color: #e3e3e3e3;
+	--logo-padding: calc(1em + 1px) 2em;
+	--logo-padding-hover: calc(1em + 1px) 6em calc(1em + 1px) 3em;
+	--link-padding: 1em;
+	--link-padding-hover: 1em 2em;
+	--link-padding-last: 3em;
+	--link-padding-last-hover: 1em 4em 1em 3em;
 }
 
 .navbar {
@@ -19,7 +25,7 @@
 	transform: skew(-20deg);
 	text-align: center;
 	width: 20%;
-	padding: calc(1em + 1px) 2em;
+	padding: var(--logo-padding);
 	margin-left: -1em;
 	background-color: var(--accent-color);
 	letter-spacing: 2px;
@@ -27,7 +33,7 @@
 }
 
 .navbar__logo:hover {
-	padding: calc(1em + 1px) 6em calc(1em + 1px) 3em;
+	padding: var(--logo-padding-hover);
 }
 
 .navbar__logo__text {
@@ -58,18 +64,19 @@
 }
 
 .navbar__navList__link:last-child {
-	padding-right: 3em;
+	padding-right: var(--link-padding-last);
 	margin-right: -1em;
 }
 
 .navbar__navList__link:hover {
 	color: var(--main-color);
 	background-color: var(--accent-color);
-	padding-right: 2em;
-	padding-left: 2em;
+	padding: var(--link-padding-hover);
 }
 
 .navbar__navList__link:last-child:hover {
-	padding-left: 3em;
-	padding-right: 4em;
+	padding: var(--link-padding-last-hover);
+}
+
+@media only screen and (max-width: 800px) {
 }
