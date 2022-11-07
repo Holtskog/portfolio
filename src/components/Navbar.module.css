@@ -1,12 +1,11 @@
 :root {
 	--main-color: rgb(67, 67, 67);
 	--accent-color: #e3e3e3e3;
+
 	--logo-padding: calc(1em + 1px) 2em;
 	--logo-padding-hover: calc(1em + 1px) 6em calc(1em + 1px) 3em;
-	--link-padding: 1em;
-	--link-padding-hover: 1em 2em;
-	--link-padding-last: 3em;
-	--link-padding-last-hover: 1em 4em 1em 3em;
+
+	--logo-padding-media: calc(1em + 1px) 1.5em;
 }
 
 .navbar {
@@ -34,6 +33,7 @@
 
 .navbar__logo:hover {
 	padding: var(--logo-padding-hover);
+	transition: 0.3s padding ease-in-out;
 }
 
 .navbar__logo__text {
@@ -64,19 +64,32 @@
 }
 
 .navbar__navList__link:last-child {
-	padding-right: var(--link-padding-last);
+	padding-right: 3em;
 	margin-right: -1em;
+	transition: 0.3s padding ease-in-out;
 }
 
 .navbar__navList__link:hover {
 	color: var(--main-color);
 	background-color: var(--accent-color);
-	padding: var(--link-padding-hover);
+	padding-right: 2em;
+	padding-left: 2em;
+	transition: 0.3s padding ease-in-out;
 }
 
 .navbar__navList__link:last-child:hover {
-	padding: var(--link-padding-last-hover);
+	padding-left: 3em;
+	padding-right: 4em;
+	transition: 0.3s padding ease-in-out;
 }
 
 @media only screen and (max-width: 800px) {
+	.navbar__logo,
+	.navbar__logo:hover,
+	.navbar__navList__link,
+	.navbar__navList__link:hover,
+	.navbar__navList__link:last-child,
+	.navbar__navList__link:last-child:hover {
+		transition: none;
+	}
 }
