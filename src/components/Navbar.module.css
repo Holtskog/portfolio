@@ -10,7 +10,7 @@
 	--link-padding: 1em;
 	--link-last-padding: 1.5em;
 
-	--link-padding-media: 0.9em 0.5em;
+	--link-padding-media: calc(1em + 1px) 0.5em;
 	--link-last-padding-media: 0.9em 1.1em;
 	--link-last-margin-media: -0.6em;
 }
