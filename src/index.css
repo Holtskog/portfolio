@@ -31,3 +31,13 @@ body {
 	min-height: 100vh;
 	background-color: #e3e3e3e3;
 }
+
+@media only screen and (max-width: 800px) {
+	* {
+		-webkit-transition: none !important;
+		-moz-transition: none !important;
+		-o-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
+}

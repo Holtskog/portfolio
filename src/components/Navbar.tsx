@@ -15,13 +15,13 @@ function Navbar() {
 			</div>
 			<nav className={styles.navbar__navList}>
 				<NavLink to={'/'} className={styles.navbar__navList__link}>
-					Home
+					<span className={styles.navbar__navList__link__text}>Home</span>
 				</NavLink>
 				<NavLink to={'about'} className={styles.navbar__navList__link}>
-					About
+					<span className={styles.navbar__navList__link__text}>About</span>
 				</NavLink>
 				<NavLink to={'contact'} className={styles.navbar__navList__link}>
-					Contact Me
+					<span className={styles.navbar__navList__link__text}>Contact Me</span>
 				</NavLink>
 			</nav>
 		</div>
