@@ -38,6 +38,10 @@
 	transform: skew(20deg);
 }
 
+.navbar__logo__text:hover {
+	color: var(--main-color);
+}
+
 .navbar__navList {
 	margin-left: auto;
 	text-align: center;
