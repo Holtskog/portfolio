@@ -39,7 +39,7 @@
 }
 
 .navbar__logo__text:hover {
-	color: var(--main-color);
+	color: var(--main-color) !important;
 }
 
 .navbar__navList {
