@@ -1,0 +1,13 @@
+:root {
+	--main-color: rgb(67, 67, 67);
+	--accent-color: #e3e3e3e3;
+}
+
+.app {
+	display: flex;
+	justify-content: center;
+}
+
+.title {
+	color: var(--main-color);
+}
