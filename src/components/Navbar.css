@@ -2,8 +2,8 @@
 	--main-color: rgb(67, 67, 67);
 	--accent-color: #e3e3e3e3;
 
-	--logo-padding: 0.8em 1em;
-	--logo-padding-hover: 0.8em 6em 0.8em 3em;
+	--logo-padding: 0.8em 3em 0.8em 3em;
+	--logo-padding-hover: 0.8em 10em 0.8em 3em;
 
 	--logo-padding-media: 0.9em 1.7em;
 
@@ -37,8 +37,7 @@
 
 .navbar__logo {
 	transform: skew(-20deg);
-	text-align: center;
-	width: 25%;
+	max-width: 25%;
 	padding: var(--logo-padding);
 	margin-left: -1em;
 	/* background-color: var(--accent-color); */
