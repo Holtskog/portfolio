@@ -37,7 +37,10 @@ body {
 	display: flex;
 	min-width: 100vw;
 	min-height: 100vh;
-	background-color: #e3e3e3e3;
+	background-color: var(--main-color);
+	-webkit-scrollbar-width: none !important;
+	scrollbar-width: none;
+	overflow-x: hidden;
 }
 
 @media only screen and (max-width: 800px) {

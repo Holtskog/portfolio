@@ -10,4 +10,8 @@
 
 .title {
 	user-select: none;
+	-webkit-user-select: none;
+}
+.title:hover {
+	cursor: default;
 }

@@ -4,7 +4,7 @@ import '../../App.css';
 function About() {
 	return (
 		<div>
-			<h1 className='title text-dark'>About</h1>
+			<h1 className='title text-light'>About</h1>
 		</div>
 	);
 }
