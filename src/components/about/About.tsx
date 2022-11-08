@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from '../../App.module.css';
+import '../../App.css';
 
 function About() {
 	return (
 		<div>
-			<h1 className={styles.title}>About</h1>
+			<h1 className='title text-dark'>About</h1>
 		</div>
 	);
 }

@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from '../../App.module.css';
+import '../../App.css';
 
 function Home() {
 	return (
 		<div>
-			<h1 className={styles.title}>Home</h1>
+			<h1 className='title text-dark'>Home</h1>
 		</div>
 	);
 }

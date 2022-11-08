@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { IoQrCodeOutline } from 'react-icons/io5';
-import styles from './Navbar.module.css';
+import './Navbar.css';
 
 function Navbar() {
 	const logo = '  LOGO';
@@ -10,32 +10,25 @@ function Navbar() {
 
 	console.log('url path = ' + url.pathname);
 	return (
-		<div className={styles.navbar}>
-			<div className={styles.navbar__logo}>
-				<NavLink to={'portfolio/'} className={styles.navbar__logo__text}>
+		<div className='navbar bg-dark'>
+			<div className='navbar__logo bg-light'>
+				<NavLink
+					to={'portfolio/'}
+					className='navbar__logo__text text-dark text-hover-dark'
+				>
 					<IoQrCodeOutline />
 					{logo}
 				</NavLink>
 			</div>
-			<nav className={styles.navbar__navList}>
-				<NavLink
-					to={'portfolio/'}
-					id='home'
-					className={styles.navbar__navList__link}
-				>
-					<span className={styles.navbar__navList__link__text}>Home</span>
+			<nav className='navbar__navList'>
+				<NavLink to={'portfolio/'} id='home' className='navbar__navList__link'>
+					<span className='navbar__navList__link__text'>Home</span>
 				</NavLink>
-				<NavLink
-					to={'portfolio/about'}
-					className={styles.navbar__navList__link}
-				>
-					<span className={styles.navbar__navList__link__text}>About</span>
+				<NavLink to={'portfolio/about'} className='navbar__navList__link'>
+					<span className='navbar__navList__link__text'>About</span>
 				</NavLink>
-				<NavLink
-					to={'portfolio/contact'}
-					className={styles.navbar__navList__link}
-				>
-					<span className={styles.navbar__navList__link__text}>Contact Me</span>
+				<NavLink to={'portfolio/contact'} className='navbar__navList__link'>
+					<span className='navbar__navList__link__text'>Contact Me</span>
 				</NavLink>
 			</nav>
 		</div>

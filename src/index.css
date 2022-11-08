@@ -2,6 +2,9 @@
 	font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 
+	--main-color: rgb(67, 67, 67);
+	--accent-color: #e3e3e3e3;
+
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -9,12 +12,24 @@
 	-webkit-text-size-adjust: 100%;
 }
 
-.active {
-	color: red;
+.bg-dark {
+	background-color: var(--main-color);
+}
+.bg-light {
+	background-color: var(--accent-color);
 }
 
-.active:hover {
-	color: red;
+.text-dark {
+	color: var(--main-color) !important;
+}
+.text-light {
+	color: var(--accent-color) !important;
+}
+.text-hover-dark:hover {
+	color: var(--main-color) !important;
+}
+.text-hover-light:hover {
+	color: var(--accent-color) !important;
 }
 
 body {

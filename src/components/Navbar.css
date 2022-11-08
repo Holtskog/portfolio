@@ -5,14 +5,22 @@
 	--logo-padding: 0.8em 1em;
 	--logo-padding-hover: 0.8em 6em 0.8em 3em;
 
-	--logo-padding-media: 0.9em 1.5em;
+	--logo-padding-media: 0.9em 1.7em;
 
 	--link-padding: 1em;
 	--link-last-padding: 1.2em;
 
 	--link-padding-media: calc(1em + 1px) 0.5em;
-	--link-last-padding-media: 0.9em 1.1em;
+	--link-last-padding-media: calc(1em + 1px) 1.1em;
 	--link-last-margin-media: -0.6em;
+}
+
+.navbar__navList__link.active {
+	color: red;
+}
+
+.navbar__navList__link.active:hover {
+	color: red;
 }
 
 .navbar {
@@ -21,7 +29,7 @@
 	display: flex;
 	width: 100vw;
 	height: 3.5em;
-	background-color: var(--main-color);
+	/* background-color: var(--main-color); */
 	box-shadow: 0px 2px 8px 2px rgb(35, 35, 35);
 	overflow-x: hidden;
 	align-items: center;
@@ -30,10 +38,10 @@
 .navbar__logo {
 	transform: skew(-20deg);
 	text-align: center;
-	width: 20%;
+	width: 25%;
 	padding: var(--logo-padding);
 	margin-left: -1em;
-	background-color: var(--accent-color);
+	/* background-color: var(--accent-color); */
 	letter-spacing: 2px;
 	transition: 0.3s padding ease-in-out;
 }
@@ -44,7 +52,7 @@
 }
 
 .navbar__logo__text {
-	color: var(--main-color) !important;
+	/* color: var(--main-color) !important; */
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 20px;
@@ -53,7 +61,7 @@
 }
 
 .navbar__logo__text:hover {
-	color: var(--main-color) !important;
+	/* color: var(--main-color) !important; */
 }
 
 .navbar__navList {
@@ -96,6 +104,11 @@
 	transition: 0.3s padding ease-in-out;
 }
 
+.navbar__logo__text,
+.navbar__navList__link__text {
+	user-select: none;
+}
+
 @media screen and (max-width: 600px) {
 	* {
 		-webkit-transition: none !important;
@@ -114,12 +127,21 @@
 	.navbar__navList__link:hover {
 		padding: var(--link-padding-media);
 		text-decoration: none;
+		margin-right: -1px;
 	}
 	.navbar__navList__link:last-child,
 	.navbar__navList__link:last-child:hover {
 		padding: var(--link-last-padding-media);
 		margin-right: var(--link-last-margin-media);
 		text-decoration: none;
+	}
+
+	.active {
+		color: red !important;
+	}
+
+	.active:hover {
+		color: red;
 	}
 
 	.navbar__navList__link,

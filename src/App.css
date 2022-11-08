@@ -9,5 +9,5 @@
 }
 
 .title {
-	color: var(--main-color);
+	user-select: none;
 }
