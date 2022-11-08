@@ -12,7 +12,7 @@ function Navbar() {
 	return (
 		<div className={styles.navbar}>
 			<div className={styles.navbar__logo}>
-				<NavLink to={'/'} className={styles.navbar__logo__text}>
+				<NavLink to={'portfolio/'} className={styles.navbar__logo__text}>
 					<IoQrCodeOutline />
 					{logo}
 				</NavLink>
