@@ -17,3 +17,14 @@
 	flex-basis: 70%;
 	text-align: center;
 }
+
+@media screen and (max-width: 1000px) {
+	.home {
+		width: 100%;
+		box-shadow: none;
+	}
+
+	.content {
+		flex-basis: 80%;
+	}
+}
