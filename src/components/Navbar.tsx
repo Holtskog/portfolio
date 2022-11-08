@@ -1,16 +1,17 @@
 import React from 'react';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
+import { IoQrCodeOutline } from 'react-icons/io5';
 import styles from './Navbar.module.css';
 
 function Navbar() {
-	const location = useLocation();
-	const navigate = useNavigate();
+	const logo = '  LOGO';
 	console.log('activeLink class = ' + styles.activeLink);
 	return (
 		<div className={styles.navbar}>
 			<div className={styles.navbar__logo}>
 				<NavLink to={'/'} className={styles.navbar__logo__text}>
-					LOGO
+					<IoQrCodeOutline />
+					{logo}
 				</NavLink>
 			</div>
 			<nav className={styles.navbar__navList}>

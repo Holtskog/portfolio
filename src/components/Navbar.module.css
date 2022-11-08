@@ -2,13 +2,13 @@
 	--main-color: rgb(67, 67, 67);
 	--accent-color: #e3e3e3e3;
 
-	--logo-padding: calc(1em + 1px) 1em;
-	--logo-padding-hover: calc(1em + 1px) 6em calc(1em + 1px) 3em;
+	--logo-padding: 0.8em 1em;
+	--logo-padding-hover: 0.8em 6em 0.8em 3em;
 
 	--logo-padding-media: 0.9em 1.5em;
 
 	--link-padding: 1em;
-	--link-last-padding: 1.5em;
+	--link-last-padding: 1.2em;
 
 	--link-padding-media: calc(1em + 1px) 0.5em;
 	--link-last-padding-media: 0.9em 1.1em;
@@ -85,8 +85,8 @@
 .navbar__navList__link:hover {
 	color: var(--main-color);
 	background-color: var(--accent-color);
-	padding-right: 2em;
-	padding-left: 2em;
+	padding-right: var(--link-last-padding);
+	padding-left: var(--link-last-padding);
 	transition: 0.3s padding ease-in-out;
 }
 
@@ -105,12 +105,11 @@
 		transition: none !important;
 	}
 
-	.navbar__logo {
-		padding: var(--logo-padding-media);
-	}
+	.navbar__logo,
 	.navbar__logo:hover {
 		padding: var(--logo-padding-media);
 	}
+
 	.navbar__navList__link,
 	.navbar__navList__link:hover {
 		padding: var(--link-padding-media);
