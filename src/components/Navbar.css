@@ -117,6 +117,12 @@
 		transition: none !important;
 	}
 
+	.navbar {
+		position: sticky;
+		top: 0;
+		min-height: 3.5em;
+	}
+
 	.navbar__logo,
 	.navbar__logo:hover {
 		padding: var(--logo-padding-media);
