@@ -1,17 +1,4 @@
-:root {
-	--main-color: rgb(67, 67, 67);
-	--accent-color: #e3e3e3e3;
-}
-
-.app {
+.content {
 	display: flex;
 	justify-content: center;
-}
-
-.title {
-	user-select: none;
-	-webkit-user-select: none;
-}
-.title:hover {
-	cursor: default;
 }

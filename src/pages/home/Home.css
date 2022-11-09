@@ -1,0 +1,21 @@
+.home {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.projects {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 3em;
+	max-width: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+	.home {
+		width: 100%;
+		box-shadow: none;
+		max-width: 90%;
+	}
+}

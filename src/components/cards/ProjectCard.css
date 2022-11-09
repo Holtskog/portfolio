@@ -1,0 +1,55 @@
+.card {
+	margin: 2em 0 0 0;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 30%;
+	min-width: 20%;
+	min-height: 50vh;
+	border-radius: 3rem;
+	padding: 3em;
+	padding-top: 0;
+}
+
+.company-icon {
+	max-width: 40%;
+	max-height: 10%;
+	margin: 0 auto;
+}
+.project-icon {
+	max-height: 10%;
+	font-size: 100px;
+	margin: 0 auto;
+}
+
+.card-description {
+	max-width: 80%;
+	text-align: center;
+	margin: auto;
+}
+
+.role-title {
+	margin-top: -1em;
+}
+
+.project-link {
+	margin: auto 0;
+	margin-bottom: 1em;
+	text-decoration: none;
+}
+.project-link:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+	.card {
+		max-width: 100%;
+		padding: 1em;
+		padding-top: 0;
+		margin: 1em 0 0 0;
+	}
+	.card:hover {
+		box-shadow: none;
+	}
+}

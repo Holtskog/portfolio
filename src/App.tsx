@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/home/Home';
-import About from './components/about/About';
-import Contact from './components/contact/Contact';
+import Navbar from './components/bars/Navbar';
+import Home from './pages/home/Home';
+import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
 import './App.css';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
 	return (
 		<Router>
 			<Navbar />
-			<div className='app'>
+			<div className='content'>
 				<Routes>
 					<Route path='portfolio/' element={<Home />} />
 					<Route path='portfolio/about' element={<About />} />
