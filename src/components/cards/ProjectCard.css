@@ -4,12 +4,11 @@
 	text-align: center;
 	justify-content: center;
 	flex-direction: column;
-	max-width: 30%;
+	max-width: 28%;
 	min-width: 20%;
 	min-height: 50vh;
-	border-radius: 3rem;
-	padding: 3em;
-	padding-top: 0;
+	border-radius: 1rem;
+	padding: 0 1em 0 1em;
 }
 
 .company-icon {
@@ -26,7 +25,7 @@
 .card-description {
 	max-width: 80%;
 	text-align: center;
-	margin: auto;
+	margin: 0 auto;
 }
 
 .role-title {
@@ -34,7 +33,7 @@
 }
 
 .project-link {
-	margin: auto 0;
+	margin: 2em auto auto auto;
 	margin-bottom: 1em;
 	text-decoration: none;
 }
@@ -42,14 +41,29 @@
 	text-decoration: underline;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
 	.card {
-		max-width: 100%;
+		max-width: 90%;
+		min-width: 70%;
 		padding: 1em;
 		padding-top: 0;
 		margin: 1em 0 0 0;
 	}
 	.card:hover {
 		box-shadow: none;
+	}
+}
+
+@media all and (max-width: 1000px) and (min-width: 801px) {
+	.card {
+		max-width: 60%;
+		min-width: 50%;
+	}
+}
+
+@media all and (max-width: 1200px) and (min-width: 1001px) {
+	.card {
+		max-width: 30%;
+		min-width: 20%;
 	}
 }

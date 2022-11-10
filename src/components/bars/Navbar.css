@@ -108,7 +108,7 @@
 	user-select: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
 	* {
 		-webkit-transition: none !important;
 		-moz-transition: none !important;
@@ -120,7 +120,7 @@
 	.navbar {
 		position: sticky;
 		top: 0;
-		min-height: 3.5em;
+		height: 3.5em;
 	}
 
 	.navbar__logo,
@@ -152,5 +152,27 @@
 	.navbar__navList__link,
 	.navbar__logo__text {
 		text-transform: none;
+	}
+}
+@media all and (max-width: 1200px) and (min-width: 801px) {
+	.navbar__logo,
+	.navbar__logo:hover {
+		padding: var(--logo-padding);
+		transition: none;
+	}
+
+	.navbar__navList__link,
+	.navbar__navList__link:hover,
+	.navbar__navList__link.active:hover {
+		padding: 1em;
+		padding-top: calc(1em + 2px);
+		transition: none;
+	}
+
+	.navbar__navList__link:last-child,
+	.navbar__navList__link:last-child:hover {
+		padding-right: 2em;
+		padding-left: 2em;
+		transition: none;
 	}
 }

@@ -8,14 +8,15 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 3em;
-	max-width: 80%;
+	gap: 2em;
+	max-width: 90%;
 }
 
 @media screen and (max-width: 1000px) {
 	.home {
 		width: 100%;
-		box-shadow: none;
+	}
+	.projects {
 		max-width: 90%;
 	}
 }
