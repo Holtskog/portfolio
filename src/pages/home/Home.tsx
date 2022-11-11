@@ -6,7 +6,7 @@ function Home() {
 	var projects = [
 		{
 			name: 'Project 1',
-			company: 'company 1',
+			company: 'Company 1',
 			role: 'Fullstack',
 			description:
 				'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, officia laboriosam? Repellendus placeat beatae fugit dicta vel in accusantium recusandae aspernatur nulla, alias ratione corporis animi odit dolores?',
@@ -27,7 +27,7 @@ function Home() {
 		},
 		{
 			name: 'Project 3',
-			company: 'company 3',
+			company: 'Company 3',
 			role: 'System Developer',
 			description:
 				'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, officia laboriosam? Repellendus placeat beatae fugit dicta vel in accusantium recusandae aspernatur nulla, alias ratione corporis animi odit dolores?',

@@ -18,20 +18,22 @@ const getImage = (link: string) => {
 	if (link === 'github') {
 		return <FaGithub className='project-icon text-light' />;
 	}
-	return link === '' ? (
-		<FaCode className='project-icon text-light' />
-	) : (
-		<img src={link} alt='company logo' className='company-icon' />
-	);
+	return <FaCode className='project-icon text-light' />;
 };
 
 function ProjectCard(props: ProjectData) {
 	return (
 		<div className='bg-card card'>
-			<h2 className='card-title text-light'>{props.name}</h2>
-			{getImage(props.imageLink)}
-			<h3 className='company-title text-light'>{props.company}</h3>
-			<h4 className='role-title text-light'>{props.role}</h4>
+			<div className='card__headers'>
+				<h2 className='card-title text-light'>{props.name}</h2>
+				{getImage(props.imageLink)}
+				<h3 className='company-title text-light'>
+					{props.company}
+					<br />
+					{props.role}
+				</h3>
+				<h4 className='role-title text-light'></h4>
+			</div>
 			<p className='card-description text-light'>{props.description}</p>
 			<a
 				href={props.linkTo}
