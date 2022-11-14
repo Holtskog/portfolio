@@ -63,19 +63,19 @@ function Home() {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			console.log('Getting data from api');
-			const response = await fetch(
-				'https://holtskog-api.azurewebsites.net/project',
-				// 'https://localhost:7119/project',
-				{
-					method: 'GET',
-					headers: {
-						Accept: 'application/json',
-					},
-				}
-			)
+			const url = document.baseURI.endsWith('localhost:3000/portfolio/')
+				? 'https://localhost:7119/project'
+				: 'https://holtskog-api.azurewebsites.net/project';
+			const response = await fetch(url, {
+				mode: 'no-cors',
+				method: 'GET',
+				headers: {
+					Accept: 'application/json',
+				},
+			})
 				.then((response) => {
 					console.log(response);
+					if (response.status === 400) return [];
 					return response.json();
 				})
 				.then((res) => {
