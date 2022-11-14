@@ -67,7 +67,6 @@ function Home() {
 				? 'https://localhost:7119/project'
 				: 'https://holtskog-api.azurewebsites.net/project';
 			const response = await fetch(url, {
-				mode: 'no-cors',
 				method: 'GET',
 				headers: {
 					Accept: 'application/json',
