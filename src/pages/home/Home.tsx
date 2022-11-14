@@ -79,7 +79,7 @@ function Home() {
 				})
 				.then((res) => {
 					console.log('Got data: ', res);
-					setProjectData(res);
+					setProjectData(res.reverse());
 				})
 				.catch((error) => console.log('Error getting data from api', error));
 		};
