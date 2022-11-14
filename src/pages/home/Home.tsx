@@ -65,8 +65,8 @@ function Home() {
 		const fetchData = async () => {
 			console.log('Getting data from api');
 			const response = await fetch(
-				// 'https://holtskog-api.azurewebsites.net/project',
-				'https://localhost:7119/project',
+				'https://holtskog-api.azurewebsites.net/project',
+				// 'https://localhost:7119/project',
 				{
 					method: 'GET',
 					headers: {
