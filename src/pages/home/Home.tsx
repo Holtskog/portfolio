@@ -63,9 +63,9 @@ function Home() {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			const url = document.baseURI.endsWith('localhost:3000/portfolio/')
-				? 'https://localhost:7119/project'
-				: 'https://holtskog-api.azurewebsites.net/project';
+			const url = document.baseURI.includes('github.io')
+				? 'https://holtskog-api.azurewebsites.net/project'
+				: 'https://localhost:7119/project';
 			const response = await fetch(url, {
 				method: 'GET',
 				headers: {
