@@ -5,10 +5,6 @@ import './Navbar.css';
 
 function Navbar() {
 	const logo = '  LOGO';
-	const url = useLocation();
-	let hasRemoved = false;
-
-	console.log('url path = ' + url.pathname);
 	return (
 		<div className='navbar bg-dark'>
 			<div className='navbar__logo bg-light'>

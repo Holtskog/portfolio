@@ -6,8 +6,6 @@ import Contact from './pages/contact/Contact';
 import './App.css';
 
 function App() {
-	// const [count, setCount] = useState(0);
-	console.log(`base path:`);
 	return (
 		<Router>
 			<Navbar />

@@ -14,7 +14,6 @@ interface ProjectData {
 }
 
 const getImage = (link: string) => {
-	console.log(link);
 	if (link === 'github') {
 		return <FaGithub className='project-icon text-light' />;
 	}
