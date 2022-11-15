@@ -4,33 +4,6 @@ import useFetch from '../../hooks/useFetch';
 import './Home.css';
 
 function Home() {
-	// const [projectData, setProjectData] = useState([]);
-
-	// useEffect(() => {
-	// 	const fetchData = async () => {
-	// 		const url = document.baseURI.includes('github.io')
-	// 			? 'https://holtskog-api.azurewebsites.net/project'
-	// 			: 'https://localhost:7119/project';
-	// 		const response = await fetch(url, {
-	// 			method: 'GET',
-	// 			headers: {
-	// 				Accept: 'application/json',
-	// 			},
-	// 		})
-	// 			.then((response) => {
-	// 				console.log(response);
-	// 				if (response.status === 400) return [];
-	// 				return response.json();
-	// 			})
-	// 			.then((res) => {
-	// 				console.log('Got data: ', res);
-	// 				setProjectData(res.reverse());
-	// 			})
-	// 			.catch((error) => console.log('Error getting data from api', error));
-	// 	};
-
-	// 	fetchData();
-	// }, []);
 	const url = document.baseURI.includes('github.io')
 		? 'https://holtskog.azurewebsites.net/project'
 		: 'https://localhost:7119/project';
@@ -38,20 +11,20 @@ function Home() {
 	return (
 		<div className='home'>
 			<section className='projects bg-dark'>
-				{(data as ProjectData[]).map(
-					(
-						{
-							fromTo,
-							name,
-							company,
-							role,
-							description,
-							imageLink,
-							linkTo,
-							linkText,
-						},
-						idx
-					) => (
+				{(data as ProjectData[]).map(function (
+					{
+						fromTo,
+						name,
+						company,
+						role,
+						description,
+						imageLink,
+						linkTo,
+						linkText,
+					},
+					idx
+				) {
+					return (
 						<ProjectCard
 							key={idx}
 							name={name}
@@ -63,8 +36,8 @@ function Home() {
 							linkTo={linkTo}
 							fromTo={fromTo}
 						/>
-					)
-				)}
+					);
+				})}
 			</section>
 		</div>
 	);
