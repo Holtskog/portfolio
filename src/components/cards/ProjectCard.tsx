@@ -1,17 +1,7 @@
 import React from 'react';
 import { FaGithub, FaCode } from 'react-icons/fa';
+import ProjectData from '../../dataModels/ProjectData';
 import './ProjectCard.css';
-
-interface ProjectData {
-	name: string;
-	role: string;
-	company: string;
-	description: string;
-	imageLink: string;
-	linkTo: string;
-	linkText: string;
-	key: string;
-}
 
 const getImage = (link: string) => {
 	if (link === 'github') {
