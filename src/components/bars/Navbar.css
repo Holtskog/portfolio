@@ -137,6 +137,7 @@
 	.navbar__navList__link:last-child,
 	.navbar__navList__link:last-child:hover {
 		padding: var(--link-last-padding-media);
+		padding-right: 1.5em;
 		margin-right: var(--link-last-margin-media);
 		text-decoration: none;
 	}
@@ -171,7 +172,7 @@
 
 	.navbar__navList__link:last-child,
 	.navbar__navList__link:last-child:hover {
-		padding-right: 2em;
+		padding-right: 3em;
 		padding-left: 2em;
 		transition: none;
 	}

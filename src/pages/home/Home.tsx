@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import ProjectCard from '../../components/cards/ProjectCard';
 import ProjectData from '../../dataModels/ProjectData';
 import useFetch from '../../hooks/useFetch';
@@ -35,23 +34,26 @@ function Home() {
 	const url = document.baseURI.includes('github.io')
 		? 'https://holtskog.azurewebsites.net/project'
 		: 'https://localhost:7119/project';
-	const [data] = useFetch<ProjectData>(url);
+	const [data] = useFetch<ProjectData>(url, true);
 	return (
 		<div className='home'>
 			<section className='projects bg-dark'>
 				{(data as ProjectData[]).map(
-					({
-						fromTo,
-						name,
-						company,
-						role,
-						description,
-						imageLink,
-						linkTo,
-						linkText,
-					}) => (
+					(
+						{
+							fromTo,
+							name,
+							company,
+							role,
+							description,
+							imageLink,
+							linkTo,
+							linkText,
+						},
+						idx
+					) => (
 						<ProjectCard
-							key={fromTo}
+							key={idx}
 							name={name}
 							company={company}
 							description={description}

@@ -7,7 +7,7 @@ interface ProjectData {
 	linkTo: string;
 	linkText: string;
 	fromTo: string;
-	key: string;
+	key: number;
 }
 
 export default ProjectData;
