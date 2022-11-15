@@ -6,8 +6,10 @@ import './ProjectCard.css';
 const getImage = (link: string) => {
 	if (link === 'github') {
 		return <FaGithub className='project-icon text-light' />;
+	} else if (link === '') {
+		return <FaCode className='project-icon text-light' />;
 	}
-	return <FaCode className='project-icon text-light' />;
+	return <img src={link} alt='company logo' className='company-icon' />;
 };
 
 function ProjectCard(props: ProjectData) {
