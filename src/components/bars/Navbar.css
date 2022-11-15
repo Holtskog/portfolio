@@ -177,3 +177,16 @@
 		transition: none;
 	}
 }
+
+/* smartphones, touchscreens */
+/* @media (hover: none) and (pointer: coarse) { */
+/* ... */
+/* } */
+/* stylus-based screens */
+/* @media (hover: none) and (pointer: fine) { */
+/* ... */
+/* } */
+/* Nintendo Wii controller, Microsoft Kinect */
+/* @media (hover: hover) and (pointer: coarse) { */
+/* ... */
+/* } */
