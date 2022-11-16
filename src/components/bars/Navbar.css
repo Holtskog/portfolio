@@ -178,6 +178,12 @@
 	}
 }
 
+@media screen and (min-width: 1201px) {
+	.navbar__navList__link {
+		letter-spacing: 3px;
+	}
+}
+
 /* smartphones, touchscreens */
 /* @media (hover: none) and (pointer: coarse) { */
 /* ... */

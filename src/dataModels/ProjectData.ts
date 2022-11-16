@@ -1,4 +1,4 @@
-interface ProjectData {
+type ProjectData = {
 	name: string;
 	role: string;
 	company: string;
@@ -8,6 +8,6 @@ interface ProjectData {
 	linkText: string;
 	fromTo: string;
 	key: number;
-}
+};
 
 export default ProjectData;

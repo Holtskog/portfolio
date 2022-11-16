@@ -3,6 +3,11 @@ import { FaGithub, FaCode } from 'react-icons/fa';
 import ProjectData from '../../dataModels/ProjectData';
 import './ProjectCard.css';
 
+type CardProps = {
+	key: string;
+	data: ProjectData;
+};
+
 const getImage = (link: string) => {
 	if (link === 'github') {
 		return <FaGithub className='project-icon text-light' />;
@@ -12,26 +17,27 @@ const getImage = (link: string) => {
 	return <img src={link} alt='company logo' className='company-icon' />;
 };
 
-function ProjectCard(props: ProjectData) {
+function ProjectCard(props: CardProps) {
+	const cardInfo = props.data;
 	return (
 		<div className='bg-card card'>
 			<div className='card__headers'>
-				<h2 className='card-title text-light'>{props.name}</h2>
-				{getImage(props.imageLink)}
+				<h2 className='card-title text-light'>{cardInfo.name}</h2>
+				{getImage(cardInfo.imageLink)}
 				<h3 className='company-title text-light'>
-					{props.company}
+					{cardInfo.company}
 					<br />
-					{props.role}
+					{cardInfo.role}
 				</h3>
 				<h4 className='role-title text-light'></h4>
 			</div>
-			<p className='card-description text-light'>{props.description}</p>
+			<p className='card-description text-light'>{cardInfo.description}</p>
 			<a
-				href={props.linkTo}
+				href={cardInfo.linkTo}
 				target='_blank'
 				className='project-link text-light'
 			>
-				{props.linkText} &#8594;
+				{cardInfo.linkText} &#8594;
 			</a>
 		</div>
 	);

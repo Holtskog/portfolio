@@ -18,32 +18,8 @@ function Home() {
 	return (
 		<div className='home'>
 			<section className='projects bg-dark'>
-				{(data as ProjectData[]).map(function (
-					{
-						fromTo,
-						name,
-						company,
-						role,
-						description,
-						imageLink,
-						linkTo,
-						linkText,
-					},
-					idx
-				) {
-					return (
-						<ProjectCard
-							key={idx}
-							name={name}
-							company={company}
-							description={description}
-							imageLink={imageLink}
-							role={role}
-							linkText={linkText === '' ? 'Visit the company`s page' : linkText}
-							linkTo={linkTo}
-							fromTo={fromTo}
-						/>
-					);
+				{(data as ProjectData[]).map((projectData, idx) => {
+					return <ProjectCard key={projectData.fromTo} data={projectData} />;
 				})}
 			</section>
 		</div>
